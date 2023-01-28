@@ -10,17 +10,16 @@ app=Flask(__name__)
 # Con esto podemos indecar el tipo de metodos que vamos a utilizar
 @app.route("/operacion",methods=["GET","POST"])
 def operacion():
-    button = 0
     if request.method == "POST":
         num1 = request.form.get("num1")
         num2 = request.form.get("num2")
-        if button == "1":
+        if request.form.get('button') == '1':
             return "<h1> La suma es: {} </h1>".format(str(int(num1)+int(num2)))
-        elif button == "2":
+        elif request.form.get('button') == '2':
             return "<h1> La resta es: {} </h1>".format(str(int(num1)-int(num2)))
-        elif button == "3":
+        elif request.form.get('button') == '3':
             return "<h1> La multiplicacion es: {} </h1>".format(str(int(num1)*int(num2)))
-        elif button == "4":
+        elif request.form.get('button') == '4':
             return "<h1> La division es: {} </h1>".format(str(int(num1)/int(num2)))
     else:
         return'''
