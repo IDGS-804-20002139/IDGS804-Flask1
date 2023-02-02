@@ -1,0 +1,47 @@
+{%extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <form class="form-horizontal" name="form1" action="/resultado2" method="post">
+            <div class="control-goup">
+                <label for="x1" class="for control-label">x1</label>
+                <div class="controls">
+                    <input type="text" name="x1" class="input-xlarge"
+                    placeholder="x1" value="">
+                </div>
+            </div>
+            <div class="control-goup">
+                <label for="x2" class="for control-label">x2</label>
+                <div class="controls">
+                    <input type="text" name="x2" class="input-xlarge"
+                    placeholder="x2" value="">
+                </div>
+            </div>
+            <div class="control-goup">
+                <label for="y1" class="for control-label">y1</label>
+                <div class="controls">
+                    <input type="text" name="y1" class="input-xlarge"
+                    placeholder="y1" value="">
+                </div>
+            </div>
+            <div class="control-goup">
+                <label for="y2" class="for control-label">y2</label>
+                <div class="controls">
+                    <input type="text" name="y2" class="input-xlarge"
+                    placeholder="y2" value="">
+                </div>
+            </div>
+            <div class="control-goup">
+                <div class="controls">
+                    <button type="submit" class="btn btn-defaul btn-primay">
+                        <i class="icon-Cancel icon-whit"></i>Calcular
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
