@@ -1,0 +1,62 @@
+{%extends "layout2.html" %} {% block content %}
+<div class="container">
+  <div class="row">
+    <h1 class="cajatitulo">Cinepolis</h1>
+    <section>
+      <br />
+      <br />
+      <br />
+    </section>
+    <form class="form-horizontal" name="form1" action="/PRCine" method="post">
+      <section class="caja1">
+        <h1>Entradas</h1>
+        <div class="control-goup form-horizontal">
+          <label for="txtNombre" class="for control-label">Nombre &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" name="txtNombre" class="input" value="" />
+        </div>
+        <br />
+        <div class="control-goup">
+          <label for="txtCanCom" class="for control-label">Cantidad Compradores &nbsp;&nbsp;</label>
+          <input type="text" name="txtCanCom" class="input" value=""/>
+        </div>
+        <br />
+        <div class="control-goup">
+          <label for="txtTCINE" class="for control-label">Tarjeta CINECO &nbsp;&nbsp;</label>
+          <label for="txtSi" class="label">Si </label>
+          <input type="radio" name="btnTar" value="1" />
+          <label for="txtNo" class="label">No </label>
+          <input type="radio" name="btnTar" value="2" />
+        </div>
+        <br/>
+        <div class="control-goup">
+          <label for="txtCanBol" class="for control-label">Cantidad de Boletas &nbsp;&nbsp;</label>
+          <input type="text" name="txtCanBol" class="input" value="" />
+        </div>
+      </section>
+      <section class="caja2">
+        <h1>Salidas</h1>
+        <div class="control-goup">
+          <br/>
+          <label for="txtValorPago" class="for control-label">Valor a Pagar &nbsp;&nbsp;</label>
+          <input type="text" name="txtValorPago" class="input-xlarge" placeholder="El valor aparece al dar clic en procesar"/>
+          <br/>
+        </div>
+      </section>
+      <section class="caja3">
+        <h1>Acciones</h1>
+        <div class="control-goup">
+          <div class="controls">
+            <button type="submit" class="btn btn-defaul btn-primay">
+              <i class="icon-Cancel icon-whit"></i>Procesar
+            </button> &nbsp;
+            <button type="submit" class="btn btn-defaul btn-primay">
+              <i class="icon-Cancel icon-whit"></i>Salir
+            </button>
+          </div>
+        </div>
+      </section>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

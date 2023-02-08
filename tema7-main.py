@@ -5,7 +5,6 @@ app=Flask(__name__)
 
 @app.route("/operasbas")
 def operasbas():
-
     return render_template("operasbas.html")
 
 @app.route("/resultado",methods=["POST"])
