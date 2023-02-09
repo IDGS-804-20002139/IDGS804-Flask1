@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<heads>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 60px;
+        }
+        .tr-head{background: #0059A3;}
+        .fondo {
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .sec1 {
+          width: 48%;
+            padding: 5px;
+            margin-top: 10px;
+            font-family: arial;
+            float:right;
+            left: 43%;
+            right: 43%;
+        }
+        .sec2 {
+          width: 48%;
+            padding: 5px;
+            margin-top: 10px;
+            font-family: arial;
+            float:left;
+            left: 43%;
+            right: 43%;
+        }
+        .caja {
+            border: solid 1px #000000;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-responsive.min.css">
+</heads>
+<body class="fondo">
+{% block content %}
+{% endblock %}
+</body>
+</html>
